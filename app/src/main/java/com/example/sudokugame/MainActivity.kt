@@ -121,7 +121,7 @@ fun SudokuGame(modifier: Modifier = Modifier) {
                 Button(onClick = {
                     if (checkGrid(currentGrid)) {
                         scope.launch {
-                            snackbarHostState.showSnackbar("Correct!")
+                            snackbarHostState.showSnackbar("You won!")
                         }
                     } else {
                         scope.launch {
